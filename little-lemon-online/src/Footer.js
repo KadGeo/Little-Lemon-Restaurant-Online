@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <img src= "restuarant.jpg" alt="footer image"/>
+      <img src= "restuarant.jpg" alt="Little Lemon Restaurant"/>
   <nav aria-label="Footer doormat navigation">
 
     <ul>
@@ -16,7 +16,7 @@ function Footer() {
     </ul>
   </nav>
 
-  /-- Contact Section--/
+  {/* -- Contact Section-- */}
     <section aria-labelledby="contact-title">
     <h2 id="contact-title">Contact</h2>
     <address>
@@ -27,14 +27,14 @@ function Footer() {
   </section>
 
 
-/-- Social Media Section --/
+{/*-- Social Media Section --*/}
   <section aria-label="Social media links">
   <h3>Social Media</h3>
   <nav aria-label="Little Lemon social media">
     <ul>
-      <li><a href="#" aria-label="Visit Little Lemon on Facebook">Facebook</a></li>
-      <li><a href="#" aria-label="Visit Little Lemon on X (formerly Twitter)">X</a></li>
-      <li><a href="#" aria-label="Visit Little Lemon on Instagram">Instagram</a></li>
+      <li><a href=" " aria-label="Visit Little Lemon on Facebook">Facebook</a></li>
+      <li><a href=" " aria-label="Visit Little Lemon on X (formerly Twitter)">X</a></li>
+      <li><a href=" " aria-label="Visit Little Lemon on Instagram">Instagram</a></li>
     </ul>
   </nav>
   </section>
