@@ -35,6 +35,56 @@ body{
   gap: var(--sp-4);
 }
 
+/* Confirmation Page */
+.confirmation-page {
+  text-align: center;
+  padding: var(--sp-4);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation-page h2 {
+  font-family: "Georgia", serif;
+  font-size: clamp(1.5rem, 2vw + .5rem, 2.5rem);
+  color: var(--brand);
+}
+
+/* BookingForm dynamic flexbox */
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  align-items: center;
+}
+
+.booking-form label,
+.booking-form input,
+.booking-form select {
+  flex: 1 1 auto;
+  min-width: 150px;
+}
+
+.booking-form input[type="submit"] {
+  flex: 1 1 100%;
+  margin-top: var(--sp-2);
+}
+
+/* Stack label-input pairs vertically on smaller screens */
+@media (max-width: 768px) {
+  .booking-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .booking-form label,
+  .booking-form input,
+  .booking-form select {
+    width: 100%;
+  }
+}
+
 /* NAVBAR */
 .navbar{
   grid-area: navbar;

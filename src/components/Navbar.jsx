@@ -22,6 +22,8 @@ export default function Navbar() {
               <li><a href="#highlights">Reservations</a></li>
               <li><Link to="/testimonials">Testimonials</Link></li>
               <li><Link to="/about">About</Link></li>
+              <li><Link to="/booking">Booking</Link></li>
+              <li><Link to="/confirmed">Confirmation</Link></li>
             </ul>
           </nav>
             </header>
