@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section id="about" className="about">
-      <h2 className="section-title">Little Lemon — New York</h2>
+    <section id="about" className="about" aria-labelledby="about-title">
+      <h2 id="about-title" className="section-title">Little Lemon — New York</h2>
       <p className="muted">
         Little Lemon is a neighborhood bistro serving Mediterranean-inspired
         dishes using local, seasonal ingredients. Our menu changes frequently
@@ -19,32 +19,32 @@ export default function About() {
         </figure>
 
         <div className="footer-widgets">
-          <div>
+          <nav aria-label="Footer navigation">
             <h3 className="widget-title">Doormat Navigation</h3>
-            <ul>
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#highlights">Menu</a></li>
-              <li><a href="#highlights">Reservations</a></li>
-              <li><a href="#testimonials">Order Online</a></li>
-              <li><a href="#about">Login</a></li>
+            <ul role="list">
+              <li><a href="#hero" aria-label="Navigate to home section">Home</a></li>
+              <li><a href="#highlights" aria-label="Navigate to menu section">Menu</a></li>
+              <li><a href="#highlights" aria-label="Navigate to reservations section">Reservations</a></li>
+              <li><a href="#testimonials" aria-label="Navigate to order online section">Order Online</a></li>
+              <li><a href="#about" aria-label="Navigate to login page">Login</a></li>
             </ul>
-          </div>
-          <div>
+          </nav>
+          <address>
             <h3 className="widget-title">Contact</h3>
-            <ul>
+            <ul role="list">
               <li>123 Lemon St, New York, NY</li>
-              <li>Phone: (212) 555-0123</li>
-              <li>Email: info@littlelemon.com</li>
+              <li>Phone: <a href="tel:+12125550123" aria-label="Call us at (212) 555-0123">(212) 555-0123</a></li>
+              <li>Email: <a href="mailto:info@littlelemon.com" aria-label="Email us at info@littlelemon.com">info@littlelemon.com</a></li>
             </ul>
-          </div>
-          <div>
+          </address>
+          <nav aria-label="Social media links">
             <h3 className="widget-title">Social Media</h3>
-            <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">X</a></li>
-              <li><a href="#">Instagram</a></li>
+            <ul role="list">
+              <li><a href="#" aria-label="Visit our Facebook page">Facebook</a></li>
+              <li><a href="#" aria-label="Visit our X (Twitter) page">X</a></li>
+              <li><a href="#" aria-label="Visit our Instagram page">Instagram</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
       </div>
     </section>

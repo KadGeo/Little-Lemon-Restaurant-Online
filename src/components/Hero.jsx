@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section id="hero" className="hero">
+    <section id="hero" className="hero" aria-labelledby="hero-title">
       <div className="hero__content">
-        <h1 className="hero__title">Little Lemon</h1>
+        <h1 id="hero-title" className="hero__title">Little Lemon</h1>
         <p className="hero__lead">
           Fresh Mediterranean flavors, seasonal produce, and warm hospitality.
         </p>
-        <a className="btn" href="#highlights">Book a Table</a>
+        <a className="btn" href="#highlights" aria-label="Book a table at Little Lemon restaurant">Book a Table</a>
       </div>
       <figure className="hero__image" aria-hidden="true">
         <img

@@ -8,10 +8,13 @@ const items = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="testimonials">
+    <section id="testimonials" className="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title" className="sr-only">Customer Testimonials</h2>
       {items.map((t, i) => (
-        <article className="card" key={i}>
-          <div className="card__rating">{'★'.repeat(t.rating)}</div>
+        <article className="card" key={i} aria-label={`Testimonial from ${t.name}`}>
+          <div className="card__rating" aria-label={`Rating: ${t.rating} out of 5 stars`} role="img">
+            {'★'.repeat(t.rating)}
+          </div>
           <div className="card__body">
             <img
               src={`https://i.pravatar.cc/80?img=${i + 11}`}
